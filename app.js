@@ -8,6 +8,10 @@ app.get('/', function(req, res) {
   res.sendFile(('index.html'));
 });
 
+app.get('/api/data', function(req, res) {
+  res.json({})
+});
+
 app.listen(3000);
 
 console.log('Running at Port 3000');
